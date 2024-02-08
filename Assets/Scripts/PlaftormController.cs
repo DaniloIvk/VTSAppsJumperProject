@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlaftormController : MonoBehaviour
@@ -11,12 +12,14 @@ public class PlaftormController : MonoBehaviour
 
     private float _platformYOffset = -0.3f;
 
-    [SerializeField] private GameObject[] _platforms;
+    [SerializeField] private GameObject[] _platformTypes;
 
-
+    private IList<GameObject> _platforms;
 
     void Start()
     {
+        _platforms = _platformTypes.ToList<GameObject>();
+
         for (int i = 0; i < 10; i++)
         {
             SpawnPlatform();
@@ -41,7 +44,12 @@ public class PlaftormController : MonoBehaviour
 
     private void SpawnPlatform()
     {
-        var platformIndex = Random.Range(0, _platforms.Length);
+        if (_platforms.Count == 4 && PlayerPrefs.GetFloat("height") > 250f)
+            _platforms.RemoveAt(0);
+        if (_platforms.Count == 3 && PlayerPrefs.GetFloat("height") > 1000f)
+            _platforms.RemoveAt(2);
+
+        var platformIndex = Random.Range(0, _platforms.Count);
         GameObject currentPlatform;
 
         currentPlatform = Instantiate(_platforms[platformIndex]);

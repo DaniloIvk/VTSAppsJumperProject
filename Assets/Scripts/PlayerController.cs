@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     private Animator _anim;
     private AudioSource _audioSource;
+    private float _maxHeight = 0f;
 
     [SerializeField]
     private float _jumpForce;
@@ -49,16 +50,24 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(horizontal * _speed, rb.velocity.y);
 
         WrapPlayer();
+
+        if (rb.position.y > _maxHeight)
+        {
+            _maxHeight = rb.position.y;
+            PlayerPrefs.SetFloat("height", _maxHeight);
+        }
     }
 
     void OnEnable()
     {
         PlayerPrefs.SetInt("score", 0);
+        PlayerPrefs.SetInt("height", 0);
     }
 
     void OnDisable()
     {
         PlayerPrefs.SetInt("score", _score);
+        PlayerPrefs.SetFloat("height", _maxHeight);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -84,12 +93,22 @@ public class PlayerController : MonoBehaviour
                     rb.bodyType = RigidbodyType2D.Kinematic;
                     _anim.Play("GameOver");
                     break;
+                case "Spring":
+                    SpringJump();
+                    break;
             }
     }
 
     private void Jump()
     {
         rb.AddForce(new Vector2(0, 1 * _jumpForce));
+        _anim.Play("JumpingAnimation");
+        _audioSource.PlayOneShot(_jumpClip, 1);
+    }
+
+    private void SpringJump()
+    {
+        rb.AddForce(new Vector2(0, 3.1f * _jumpForce));
         _anim.Play("JumpingAnimation");
         _audioSource.PlayOneShot(_jumpClip, 1);
     }
@@ -105,8 +124,6 @@ public class PlayerController : MonoBehaviour
 
     public void GameOver()
     {
-        //var currentScene = SceneManager.GetActiveScene().name;
-        //SceneManager.LoadScene(currentScene);
         SceneManager.LoadScene("GameOverScene");
     }
 }

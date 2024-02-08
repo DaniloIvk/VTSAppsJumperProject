@@ -735,12 +735,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a690d6be5a007fd459a461cb59e5df98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _platformXOffset: 3
+  _platformXOffset: 2.2
   _resetGameTransform: {fileID: 382187311}
-  _platforms:
+  _platformTypes:
   - {fileID: 4794990654916958865, guid: e6d55c796f713964aad2b0a0bb116e6e, type: 3}
-  - {fileID: 7267072959010997120, guid: f925cf23881ba5c4c955210fdb0a60bd, type: 3}
   - {fileID: 4931419081924282707, guid: 4cc2ca2175625074fb4e74e9b54394c3, type: 3}
+  - {fileID: 7267072959010997120, guid: f925cf23881ba5c4c955210fdb0a60bd, type: 3}
+  - {fileID: 6977754485926870740, guid: 037693cb8d1b63446ae4a8d6a10aa877, type: 3}
 --- !u!61 &524661965
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1448,9 +1449,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfdc8678db015dc4d8cc8cbc67c6a983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpForce: 800
+  _jumpForce: 750
   _speed: 5
-  _wrapPlayerRange: 3.8
+  _wrapPlayerRange: 3.2
   _jumpClip: {fileID: 8300000, guid: 82bce07aae1d5f14ba8bf4656de6a2bd, type: 3}
   _collectCoinClip: {fileID: 8300000, guid: 50336f282e011fd4289bfbe207f90c39, type: 3}
   _scoreText: {fileID: 230188226}

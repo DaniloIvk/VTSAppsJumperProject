@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Programming\\GitHub\\VTSAppsJumperProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|c:\\programming\\github\\vtsappsjumperproject\\assets\\scripts\\plaftormcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plaftormcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|C:\\Programming\\GitHub\\VTSAppsJumperProject\\assets\\scripts\\gamescorescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamescorescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|C:\\Programming\\GitHub\\VTSAppsJumperProject\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|c:\\programming\\github\\vtsappsjumperproject\\assets\\scripts\\gamescorescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamescorescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|C:\\Programming\\GitHub\\VTSAppsJumperProject\\assets\\scripts\\plaftormcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plaftormcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|c:\\programming\\github\\vtsappsjumperproject\\assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|C:\\Programming\\GitHub\\VTSAppsJumperProject\\assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|C:\\Programming\\GitHub\\VTSAppsJumperProject\\assets\\scripts\\springanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\springanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4174900-0C40-1729-66E4-553FD552C63D}|Assembly-CSharp.csproj|C:\\Programming\\GitHub\\VTSAppsJumperProject\\assets\\scripts\\resetgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,20 +62,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SpringAnimation.cs",
+              "DocumentMoniker": "C:\\Programming\\GitHub\\VTSAppsJumperProject\\Assets\\Scripts\\SpringAnimation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpringAnimation.cs",
+              "ToolTip": "C:\\Programming\\GitHub\\VTSAppsJumperProject\\Assets\\Scripts\\SpringAnimation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpringAnimation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-08T12:02:07.429Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "GameScoreScript.cs",
               "DocumentMoniker": "C:\\Programming\\GitHub\\VTSAppsJumperProject\\Assets\\Scripts\\GameScoreScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameScoreScript.cs",
               "ToolTip": "C:\\Programming\\GitHub\\VTSAppsJumperProject\\Assets\\Scripts\\GameScoreScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameScoreScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-07T23:45:34.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-07T23:45:34.197Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ResetGame.cs",
               "DocumentMoniker": "C:\\Programming\\GitHub\\VTSAppsJumperProject\\Assets\\Scripts\\ResetGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ResetGame.cs",
@@ -83,16 +98,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Programming\\GitHub\\VTSAppsJumperProject\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\Programming\\GitHub\\VTSAppsJumperProject\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADAAAABGAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-07T21:00:40.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-07T21:00:40.315Z"
             },
             {
               "$type": "Document",
@@ -104,12 +118,11 @@
               "RelativeToolTip": "Assets\\Scripts\\MenuManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-07T21:00:38.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-07T21:00:38.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CameraController.cs",
               "DocumentMoniker": "C:\\Programming\\GitHub\\VTSAppsJumperProject\\Assets\\Scripts\\CameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraController.cs",
@@ -121,13 +134,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PlaftormController.cs",
               "DocumentMoniker": "C:\\Programming\\GitHub\\VTSAppsJumperProject\\Assets\\Scripts\\PlaftormController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlaftormController.cs",
               "ToolTip": "C:\\Programming\\GitHub\\VTSAppsJumperProject\\Assets\\Scripts\\PlaftormController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlaftormController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAABYAAAAJAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAAC8AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-07T21:00:27.119Z",
               "EditorCaption": ""
