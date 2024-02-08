@@ -7,6 +7,7 @@ TagManager:
   - Platform
   - Coin
   - Spike
+  - Score
   layers:
   - Default
   - TransparentFX

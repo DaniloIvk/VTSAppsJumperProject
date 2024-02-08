@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] Transform _player;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

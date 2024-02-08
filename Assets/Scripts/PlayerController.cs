@@ -23,14 +23,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private AudioClip _jumpClip;
 
+    [SerializeField]
+    private AudioClip _collectCoinClip;
+
     private int _score = 0;
 
     [SerializeField]
     private TextMeshProUGUI _scoreText;
-
-
-
-    
 
     private void Awake()
     {
@@ -52,32 +51,40 @@ public class PlayerController : MonoBehaviour
         WrapPlayer();
     }
 
+    void OnEnable()
+    {
+        PlayerPrefs.SetInt("score", 0);
+    }
+
+    void OnDisable()
+    {
+        PlayerPrefs.SetInt("score", _score);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision != null && rb.velocity.y == 0)
         {
             Jump();
-
-            
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        switch (collision.gameObject.tag)
-        {
-            case "Coin":
-                Destroy(collision.gameObject);
-                _score++;
-                _scoreText.text = _score.ToString();
-                break;
-            case "Spike":
-                var currentScene = SceneManager.GetActiveScene().name;
-                SceneManager.LoadScene(currentScene);
-                break;
-
-        }
-
+        if (rb.velocity.y <= 0)
+            switch (collision.gameObject.tag)
+            {
+                case "Coin":
+                    Destroy(collision.gameObject);
+                    _score++;
+                    _scoreText.text = _score.ToString();
+                    _audioSource.PlayOneShot(_collectCoinClip, 1);
+                    break;
+                case "Spike":
+                    rb.bodyType = RigidbodyType2D.Kinematic;
+                    _anim.Play("GameOver");
+                    break;
+            }
     }
 
     private void Jump()
@@ -85,17 +92,21 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(new Vector2(0, 1 * _jumpForce));
         _anim.Play("JumpingAnimation");
         _audioSource.PlayOneShot(_jumpClip, 1);
-
-
-
     }
+
     private void WrapPlayer()
     {
-        if(transform.position.x <= -_wrapPlayerRange)
+        if (transform.position.x <= -_wrapPlayerRange)
             transform.position = new Vector2(_wrapPlayerRange - 0.5f, transform.position.y);
 
         if (transform.position.x >= _wrapPlayerRange)
             transform.position = new Vector2(-_wrapPlayerRange + 0.5f, transform.position.y);
     }
 
+    public void GameOver()
+    {
+        //var currentScene = SceneManager.GetActiveScene().name;
+        //SceneManager.LoadScene(currentScene);
+        SceneManager.LoadScene("GameOverScene");
+    }
 }

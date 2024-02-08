@@ -17,13 +17,10 @@ public class PlaftormController : MonoBehaviour
 
     void Start()
     {
-        for (int i=0; i< 10; i++)
+        for (int i = 0; i < 10; i++)
         {
             SpawnPlatform();
-           
         }
-
-        print(_platforms.Length);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,11 +29,11 @@ public class PlaftormController : MonoBehaviour
         if (collision.CompareTag("Platform"))
         {
 
-        SpawnPlatform();
-        Destroy(collision.gameObject);
-        var newResetPositionY = _resetGameTransform.position.y + 4;
-        var newResetPosition = new Vector2(0f, newResetPositionY);
-        _resetGameTransform.position = newResetPosition;
+            SpawnPlatform();
+            Destroy(collision.gameObject);
+            var newResetPositionY = _resetGameTransform.position.y + 4;
+            var newResetPosition = new Vector2(0f, newResetPositionY);
+            _resetGameTransform.position = newResetPosition;
 
         }
 
@@ -54,6 +51,4 @@ public class PlaftormController : MonoBehaviour
         currentPlatform.transform.position = new Vector2(positionX, _platformYOffset);
         _platformYOffset += 4;
     }
-
-
 }
