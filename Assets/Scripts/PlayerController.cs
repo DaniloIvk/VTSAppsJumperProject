@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
@@ -41,12 +42,24 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _scoreText.text = _score.ToString();
+
+        if (GravitySensor.current != null)
+            InputSystem.EnableDevice(GravitySensor.current);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        var horizontal = Input.GetAxisRaw("Horizontal");
+        float horizontal;
+        if (GravitySensor.current != null)
+        {
+            Vector3 gravity = GravitySensor.current.gravity.ReadValue();
+            horizontal = 2.5f * gravity.x;
+            horizontal = Math.Min(horizontal, 800f);
+        }
+        else
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+        }
         rb.velocity = new Vector2(horizontal * _speed, rb.velocity.y);
 
         WrapPlayer();
